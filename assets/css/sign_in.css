@@ -1,0 +1,43 @@
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-container .sign-in-form-container {
+  text-align: center;
+}
+
+.sign-in-container .sign-in-form-container .text-field, .sign-in-container .sign-in-form-container .sign-in-button {
+  padding: 0.5rem;
+  width: 20em;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.sign-in-container .sign-in-form-container .text-field:focus {
+  outline: none !important;
+  border-color: #5138EE;
+}
+
+.sign-in-container .sign-in-form-container .sign-in-button {
+  border-style: none;
+  background-color: #5138EE;
+  color: white;
+  border-radius: 50px;
+  padding: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.4rem;
+}
+
+.sign-in-container .sign-in-form-container .forget-link {
+  margin-left: 12rem;
+  font-size: 0.9rem;
+}
+
+.sign-in-container .sign-in-form-container a {
+  text-decoration: none;
+  color: #5138EE;
+  font-weight: 550;
+}

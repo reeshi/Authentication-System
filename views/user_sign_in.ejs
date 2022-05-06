@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/sign_in.css">
+
+<div class="sign-in-container">
+    <h1>
+        Sign In
+    </h1>
+    
+    <div class="sign-in-form-container">
+
+        <form action="/users/create-session" method="post">
+            <input type="email" name="email" placeholder="Your Email" required class="text-field">
+            <br>
+            <input type="password" name="password" placeholder="Password" required class="text-field">
+            <br>
+            <a href="/users/forget" class="forget-link">Forget password?</a>
+            <br>
+            <input type="submit" value="Sign In" class="sign-in-button">
+        </form>
+
+        <p>
+            Not registered yet?&nbsp;<a href="/users/sign-up">Create an Account</a>
+        </p>
+
+    </div>
+</div>

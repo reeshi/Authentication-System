@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/reset.css">
+
+<div class="reset-container">
+
+    <h1>
+        Update the Password
+    </h1>
+
+    <div class="reset-form-container">
+
+        <form action="/users/reset-password" method="post">
+            <% if(locals.userEmail) {%>
+                <input type="hidden" name="email" value="<%= userEmail %>">
+            <% }else{%>
+                <input type="hidden" name="email" value="<%= user.email %>">
+            <%}%>
+            <input type="password" name="password" class="text-field" placeholder="New password">
+            <input type="password" name="confirm_passowrd" class="text-field" placeholder="Confirm New password">
+            <input type="submit" value="Update the Password" class="submit-btn">
+        </form>
+
+    </div>
+
+    <% if(!locals.userMail) {%>
+        <p>Back to the <a href="/">Home</a></p>
+    <% } %>
+    
+</div>

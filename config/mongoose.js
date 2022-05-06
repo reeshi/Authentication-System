@@ -1,0 +1,15 @@
+const mongoose = require("mongoose");
+
+// connect mongoose to mongodb
+mongoose.connect(`mongodb://localhost/authentication_system_db`);
+
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Error connecting to MongoDB"));
+
+db.once("open", function () {
+    console.log("Connected to the Database :: MongoDB");
+});
+
+
+module.exports = db;
