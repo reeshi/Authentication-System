@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // connect mongoose to mongodb
-mongoose.connect(`mongodb://localhost/authentication_system_db`);
+mongoose.connect(process.env.DATABASE);
 
 const db = mongoose.connection;
 
